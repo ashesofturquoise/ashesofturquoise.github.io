@@ -1,0 +1,221 @@
+html {
+    overflow-y: scroll;
+}
+body {
+    text-rendering: optimizeLegibility;
+    margin: 10px auto 200px;
+    width: 700px;
+    font-family: serif;
+    font-size: 18px;
+    line-height: 24px;
+    background: #fcfcfc;
+    color: black;
+}
+
+hr.main-separator {
+    border: none;
+    padding: 0;
+    margin: 12px 0px;
+    height: 1px;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #ddd;
+}
+
+header {
+    color: #777;
+    text-transform: lowercase;
+    font-size: 20px;
+    line-height: 30px;
+}
+header > nav {
+    float: right;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+footer {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 30px;
+}
+footer > nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    margin: 36px 0px;
+}
+
+p, ul, ol {
+    margin: 0px 0px 24px;
+}
+
+a {
+    color: #e50053;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 6px solid #e2e2e2;
+    margin-left: 24px;
+    padding-left: 12px;
+}
+
+/* Headings ---------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+h1 a, h2 a, h3 a, h4 a {
+    color: black
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+    color: #e50053; text-decoration: none;
+}
+
+h1 { font-size: 40px; line-height: 50px; margin: 24px 0; }
+h2 { font-size: 36px; line-height: 36px; margin: 24px 0; }
+h3 { font-size: 30px; line-height: 36px; margin: 24px 0; }
+h4 { font-size: 24px; line-height: 36px; margin: 24px 0; }
+
+/* Code -------------------------------------------------------------------- */
+code, pre {
+    font-family: Consolas, Menlo, "Courier New", monospace;
+}
+p code, li code, table code {
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 0px 3px;
+    line-height: 20px;
+    margin: 0;
+}
+pre {
+    font-size: 14px;
+    line-height: 20px;
+
+    overflow-x: auto;
+
+    border: 1px solid #d5d5d5;
+    border-left: 10px solid #d5d5d5;
+    background-color: #fafafa;
+
+    padding: 11px 15px 12px;
+    margin: 0px 0px 24px -25px;
+}
+pre i {
+    /* come on, 3bmd */
+    font-style: normal;
+}
+pre span.string {
+    font-style: italic;
+}
+pre span.comment {
+    font-style: italic;
+    font-weight: bold;
+    color: #714678;
+}
+pre.lineart {
+    background: none;
+    border: none;
+    line-height: 16px;
+}
+
+/* Tables ------------------------------------------------------------------ */
+table {
+    margin: 0px auto 24px;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #666;
+    padding: 4px 8px;
+}
+th {
+    background-color: #f4f4f4;
+}
+
+/* Bits & Bobs ------------------------------------------------------------- */
+a#logo { color: #000000; }
+a#logo:hover { color: #e50053; }
+
+ol.table-of-contents {
+    list-style-type: none;
+    margin: 0px 0px 24px 0px;
+    padding: 0px;
+}
+ol.table-of-contents ol {
+    list-style-type: none;
+    margin: 0px 0px 0px 36px;
+    padding: 0px;
+}
+
+/* Index Pages ------------------------------------------------------------- */
+ol.index {
+    list-style-type: none;
+    padding: 0px;
+}
+ol.index li.item {
+    margin-bottom: 24px;
+}
+ol.index p.snippet {
+    margin-top: 2px;
+    font-style: italic;
+}
+ol.index p.date {
+    margin: 0px;
+    color: #666;
+    float: right;
+}
+
+/* Individual Pages -------------------------------------------------------- */
+main#page-home p {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+
+main#page-blog-entry p.date,
+main#page-photography-gallery p.date,
+main#page-simple p.date {
+    margin: -20px 0px 24px;
+    color: #666;
+}
+
+main#page-blog-entry img {
+    display: block;
+    margin: 25px auto 26px;
+    border: 11px solid #e5e5e5;
+    padding: 1px;
+    background: black;
+    max-width: 676px;
+}
+main#page-blog-entry canvas {
+    display: block;
+    margin: 25px auto 26px;
+    border: 11px solid #e5e5e5;
+    padding: 1px;
+    background: black;
+}
+main#page-blog-entry div.threejs {
+    margin: 0px 0px 24px;
+}
+
+main#page-photography-gallery ul {
+    margin: 0px 0px 24px 0px;
+    padding: 0;
+}
+main#page-photography-gallery li {
+    display: inline-block;
+    margin: 0;
+}
+main#page-photography-gallery img {
+    display: inline-block;
+    margin: 0px 12px 12px 0px;
+    border: 1px solid black;
+    width: 160px;
+    height: 160px;
+}
